@@ -39,7 +39,7 @@
         - name: Push changes
           uses: ad-m/github-push-action@master
           with:
-            github_token: ${{ secrets.GH_SNAKE_TOKEN }}
+            github_token: ${{ secrets.GITHUB_TOKEN }}
             branch: master
             force: true
         - uses: crazy-max/ghaction-github-pages@v2.1.3
@@ -48,7 +48,7 @@
             target_branch: output
             build_dir: dist
           env:
-            github_token: ${{ secrets.GH_SNAKE_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   ```
   
 - Put following code into your `README.md` file
