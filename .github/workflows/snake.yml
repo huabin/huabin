@@ -51,4 +51,4 @@ jobs:
           target_branch: output
           build_dir: dist
         env:
-          github_token: ${{ secrets.GH_SNAKE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_SNAKE_TOKEN }}
