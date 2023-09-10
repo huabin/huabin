@@ -1,6 +1,8 @@
 ### How to
 
-- Create a file in `.github/workflows` and name it, E.g. `snake.yml`
+- Create a repository with the same name as your github username. E.g. my GitHub username is `huabin`, and the repository name must be `huabin`.
+
+- Create a file in `.github/workflows` in repository and name it, E.g. `snake.yml`
 
 - Put following code into the file
 
@@ -51,7 +53,7 @@
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   ```
   
-- Put following code into your `README.md` file
+- Put following code into your `README.md` file. Only `README.md` can be displayed in your profile. E.g. I don't want it to show up in my profile, I renamed `README.md` to `Example.md`.
 
   ```
   ![snake gif](https://github.com/your_github_name/your_github_name/blob/output/github-contribution-grid-snake.svg)
